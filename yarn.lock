@@ -1874,6 +1874,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@openmeteo/sdk@^1.4.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@openmeteo/sdk/-/sdk-1.10.0.tgz#283efc985d85825402f22b1bbc9d20d6ba573c20"
+  integrity sha512-kzBCdbm9uXM2wdaJcsOHFRLzTrB5SGgH+Gy9QnbKOWEAzV5k8Z5aI6juilxsBcU91fOe5qa8cCWoSkxbX3wk6A==
+  dependencies:
+    flatbuffers "^23.0.0"
+
 "@react-native-community/cli-clean@12.3.2":
   version "12.3.2"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-clean/-/cli-clean-12.3.2.tgz#d4f1730c3d22d816b4d513d330d5f3896a3f5921"
@@ -4318,6 +4325,11 @@ flat-cache@^3.0.4:
     keyv "^4.5.3"
     rimraf "^3.0.2"
 
+flatbuffers@^23.0.0, flatbuffers@^23.5.26:
+  version "23.5.26"
+  resolved "https://registry.yarnpkg.com/flatbuffers/-/flatbuffers-23.5.26.tgz#01358e272a61239f0faf3bfbe4e014f3ace9d746"
+  integrity sha512-vE+SI9vrJDwi1oETtTIFldC/o9GsVKRM+s6EL0nQgxXlYV1Vc4Tk30hj4xGICftInKQKj1F3up2n8UbIVobISQ==
+
 flatted@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
@@ -6284,6 +6296,14 @@ open@^7.0.3:
   dependencies:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
+
+openmeteo@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/openmeteo/-/openmeteo-1.1.3.tgz#bacbfc2de23e86635da8d61060071199f688b502"
+  integrity sha512-f4ycmEA9rnhH4mPkDSLAuZ9dCu33nZ2bP7pLUJmZp2YYAuIDrGDIWU/VXQPmG48l5s+vw0VcnH9+CMqL57oADQ==
+  dependencies:
+    "@openmeteo/sdk" "^1.4.0"
+    flatbuffers "^23.5.26"
 
 optionator@^0.9.3:
   version "0.9.3"
