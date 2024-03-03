@@ -53,15 +53,26 @@ module.exports = {
 		'no-void': 'off',
 		'react/jsx-props-no-spreading': 'off',
 		'import/prefer-default-export': 'off',
-		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+		'import/no-extraneous-dependencies': [
+			'error',
+			{ devDependencies: true },
+		],
 		'react/display-name': 'off',
+		'@typescript-eslint/quotes': [
+			'error',
+			'single',
+			{
+				avoidEscape: true,
+				allowTemplateLiterals: true,
+			},
+		],
 		'prettier/prettier': [
 			'error',
 			{
 				printWidth: 80,
-                endOfLine: 'auto',
-				tabWidth: 2,
-				indentStyle: 'space',
+				endOfLine: 'auto',
+				tabWidth: 4,
+				indentStyle: 'tab',
 				useTabs: true,
 				arrowParens: 'avoid',
 				bracketSameLine: false,
