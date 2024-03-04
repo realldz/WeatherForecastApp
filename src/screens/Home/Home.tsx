@@ -2,7 +2,7 @@ import { SafeScreen } from '@/components/template';
 import { ScrollView, Text } from 'react-native';
 import styles from '@/screens/Home/style';
 
-function Home() {
+const Home = () => {
 	return (
 		<SafeScreen>
 			<ScrollView style={styles.mainBorder}>
@@ -10,6 +10,6 @@ function Home() {
 			</ScrollView>
 		</SafeScreen>
 	);
-}
+};
 
 export default Home;

@@ -9,7 +9,7 @@ import 'fast-text-encoding';
 const queryClient = new QueryClient();
 export const storage = new MMKV();
 
-function App() {
+const App = () => {
 	Object.assign(global, {
 		TextEncoder,
 		TextDecoder,
@@ -22,6 +22,6 @@ function App() {
 			</ThemeProvider>
 		</QueryClientProvider>
 	);
-}
+};
 
 export default App;

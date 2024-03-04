@@ -4,7 +4,7 @@ import { MMKV } from 'react-native-mmkv';
 
 import { ThemeProvider, useTheme } from '@/theme';
 
-function TestChildComponent() {
+const TestChildComponent = () => {
 	const { variant, changeTheme } = useTheme();
 	return (
 		<View>
@@ -16,7 +16,7 @@ function TestChildComponent() {
 			/>
 		</View>
 	);
-}
+};
 
 describe('ThemeProvider', () => {
 	let storage: MMKV;
