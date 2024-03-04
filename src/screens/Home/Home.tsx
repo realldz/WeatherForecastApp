@@ -3,15 +3,18 @@ import { ScrollView, Text } from 'react-native';
 import styles from '@/screens/Home/style';
 import { getTemperature } from '@/services/apis/weatherApi';
 import { WeatherParamsExtend } from '@/interfaces/ForecastParams';
+import { useEffect } from 'react';
 
 function Home() {
 	const params: WeatherParamsExtend = {
 		latitude: 54,
 		longitude: 12,
 	};
-	getTemperature(params)
-		.then(res => console.log('res.then:::', res))
-		.catch(res => console.log('res.catch:::', res));
+	useEffect(() => {
+		getTemperature(params)
+			.then(res => console.log('res.then:::', res))
+			.catch(res => console.log('res.catch:::', res));
+	}, []);
 	return (
 		<SafeScreen>
 			<ScrollView style={styles.mainBorder}>
