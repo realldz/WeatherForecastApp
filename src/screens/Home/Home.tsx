@@ -10,8 +10,8 @@ function Home() {
 		longitude: 12,
 	};
 	getTemperature(params)
-		.then(res => console.log(res))
-		.catch(res => res);
+		.then(res => console.log('res.then:::', res))
+		.catch(res => console.log('res.catch:::', res));
 	return (
 		<SafeScreen>
 			<ScrollView style={styles.mainBorder}>
