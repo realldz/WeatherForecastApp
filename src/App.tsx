@@ -4,9 +4,9 @@ import { MMKV } from 'react-native-mmkv';
 import { ThemeProvider } from '@/theme';
 import ApplicationNavigator from './navigators/Application';
 import './translations';
+import 'fast-text-encoding';
 
 const queryClient = new QueryClient();
-
 export const storage = new MMKV();
 
 function App() {
