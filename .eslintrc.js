@@ -51,6 +51,7 @@ module.exports = {
 		'react/no-array-index-key': 'off',
 		'no-tabs': 'off',
 		'no-void': 'off',
+		'no-console': 'off',
 		'react/jsx-props-no-spreading': 'off',
 		'import/prefer-default-export': 'off',
 		'import/extensions': [
@@ -65,7 +66,9 @@ module.exports = {
 		],
 		'import/no-extraneous-dependencies': [
 			'error',
-			{ devDependencies: true },
+			{
+				devDependencies: true,
+			},
 		],
 		'react/display-name': 'off',
 		'@typescript-eslint/quotes': [
