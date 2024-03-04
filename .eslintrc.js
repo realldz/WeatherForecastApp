@@ -53,6 +53,16 @@ module.exports = {
 		'no-void': 'off',
 		'react/jsx-props-no-spreading': 'off',
 		'import/prefer-default-export': 'off',
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				js: 'never',
+				jsx: 'never',
+				ts: 'never',
+				tsx: 'never',
+			},
+		],
 		'import/no-extraneous-dependencies': [
 			'error',
 			{ devDependencies: true },

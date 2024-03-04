@@ -1,11 +1,8 @@
 import { SafeScreen } from '@/components/template';
 import { ScrollView, Text } from 'react-native';
-// eslint-disable-next-line import/extensions
-import styles from '@/screens/Home/style.ts';
-// eslint-disable-next-line import/extensions
-import { getTemperature } from '@/services/apis/weatherApi.ts';
-// eslint-disable-next-line import/extensions
-import { WeatherParamsExtend } from '@/interfaces/ForecastParams.ts';
+import styles from '@/screens/Home/style';
+import { getTemperature } from '@/services/apis/weatherApi';
+import { WeatherParamsExtend } from '@/interfaces/ForecastParams';
 
 function Home() {
 	const params: WeatherParamsExtend = {
