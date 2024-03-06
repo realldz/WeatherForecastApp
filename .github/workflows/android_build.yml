@@ -37,6 +37,7 @@ jobs:
       - name: Build application
         run: |
           cd android
+          ./gradlew cleanBuildCache
           ./gradlew assembleRelease
 
       - name: Upload application
