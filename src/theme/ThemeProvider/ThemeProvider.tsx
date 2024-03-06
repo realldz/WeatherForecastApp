@@ -42,7 +42,7 @@ type Props = PropsWithChildren<{
 	storage: MMKV;
 }>;
 
-function ThemeProvider({ children, storage }: Props) {
+const ThemeProvider = ({ children, storage }: Props) => {
 	// Current theme variant
 	const [variant, setVariant] = useState(
 		(storage.getString('theme') as Variant) || 'default',
@@ -117,6 +117,6 @@ function ThemeProvider({ children, storage }: Props) {
 	return (
 		<ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 	);
-}
+};
 
 export default ThemeProvider;

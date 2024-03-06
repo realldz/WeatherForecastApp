@@ -9,7 +9,7 @@ import { SafeScreen } from '@/components/template';
 
 import type { ApplicationScreenProps } from '@/types/navigation';
 
-function Startup({ navigation }: ApplicationScreenProps) {
+const Startup = ({ navigation }: ApplicationScreenProps) => {
 	const { layout, gutters, fonts } = useTheme();
 	const { t } = useTranslation(['startup']);
 
@@ -52,6 +52,6 @@ function Startup({ navigation }: ApplicationScreenProps) {
 			</View>
 		</SafeScreen>
 	);
-}
+};
 
 export default Startup;

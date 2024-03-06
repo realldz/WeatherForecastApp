@@ -1,9 +1,9 @@
 import type { HasProperty } from '@/types/theme/common';
 
-export function hasProperty<Config, KeyPath extends string>(
+export const hasProperty = <Config, KeyPath extends string>(
 	configuration: Config,
 	property: KeyPath,
-): configuration is HasProperty<Config, KeyPath> & Config {
+): configuration is HasProperty<Config, KeyPath> & Config => {
 	const parts = property.split('.');
 	let currentObj: any = configuration;
 
@@ -18,4 +18,4 @@ export function hasProperty<Config, KeyPath extends string>(
 	}
 
 	return true;
-}
+};

@@ -51,11 +51,24 @@ module.exports = {
 		'react/no-array-index-key': 'off',
 		'no-tabs': 'off',
 		'no-void': 'off',
+		'no-console': 'off',
 		'react/jsx-props-no-spreading': 'off',
 		'import/prefer-default-export': 'off',
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				js: 'never',
+				jsx: 'never',
+				ts: 'never',
+				tsx: 'never',
+			},
+		],
 		'import/no-extraneous-dependencies': [
 			'error',
-			{ devDependencies: true },
+			{
+				devDependencies: true,
+			},
 		],
 		'react/display-name': 'off',
 		'@typescript-eslint/quotes': [
@@ -64,6 +77,13 @@ module.exports = {
 			{
 				avoidEscape: true,
 				allowTemplateLiterals: true,
+			},
+		],
+		'react/function-component-definition': [
+			2,
+			{
+				namedComponents: 'arrow-function',
+				unnamedComponents: 'arrow-function',
 			},
 		],
 		'prettier/prettier': [

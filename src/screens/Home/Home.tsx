@@ -1,16 +1,15 @@
 import { SafeScreen } from '@/components/template';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text } from 'react-native';
+import styles from '@/screens/Home/style';
 
-function Home() {
+const Home = () => {
 	return (
 		<SafeScreen>
-			<ScrollView>
-				<View style={{ flex: 1, backgroundColor: 'red' }}>
-					<Text>Đây là 1 text</Text>
-				</View>
+			<ScrollView style={styles.mainBorder}>
+				<Text style={styles.textPreview}>This is a text</Text>
 			</ScrollView>
 		</SafeScreen>
 	);
-}
+};
 
 export default Home;
