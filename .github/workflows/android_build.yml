@@ -10,7 +10,6 @@ on:
     types: 
       - closed
   workflow_dispatch: 
-    - build    
 
 jobs:
   build:
