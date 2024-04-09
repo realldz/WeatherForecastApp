@@ -1,12 +1,7 @@
 import { config } from '@/theme/_config';
 import { staticGutterStyles } from '@/theme/gutters';
 
-import type {
-	ArrayValue,
-	RemoveAfterSeparator,
-	RemoveBeforeSeparator,
-	ToNumber,
-} from './common';
+import type { ArrayValue, RemoveAfterSeparator, RemoveBeforeSeparator, ToNumber } from './common';
 
 type Margins =
 	| 'margin'

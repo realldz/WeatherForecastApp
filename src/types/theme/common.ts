@@ -3,11 +3,11 @@ import { config } from '@/theme/_config';
 export type ArrayValue<T extends readonly unknown[]> = T[number];
 
 export type RemoveAfterSeparator<S extends string> =
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	S extends `${infer Before}_${infer _}` ? Before : S;
 
 export type RemoveBeforeSeparator<S extends string> =
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	S extends `${infer _}_${infer After}` ? After : S;
 
 export type ToNumber<
@@ -29,25 +29,25 @@ export type HasProperty<
 > = KeyPath extends `${infer Key}.${infer Rest}`
 	? Key extends keyof typeof config
 		? {
-				readonly [_ in Key]: Key extends KeysOfUnion<Config>
-					? HasProperty<
-							Extract<Config, { [__ in Key]: unknown }>[Key],
-							Rest
-					  >
-					: HasProperty<
-							Extract<
-								typeof config,
-								{ [___ in Key]: unknown }
-							>[Key],
-							Rest
-					  >;
-		  }
+			readonly [_ in Key]: Key extends KeysOfUnion<Config>
+				? HasProperty<
+					Extract<Config, { [__ in Key]: unknown }>[Key],
+					Rest
+				>
+				: HasProperty<
+					Extract<
+						typeof config,
+						{ [___ in Key]: unknown }
+					>[Key],
+					Rest
+				>;
+		}
 		: never
 	: KeyPath extends KeysOfUnion<Config>
-	? {
+		? {
 			readonly [_ in KeyPath]: Extract<
 				Config,
 				{ [__ in KeyPath]: unknown }
 			>[KeyPath];
-	  }
-	: { readonly [_ in KeyPath]: never };
+		}
+		: { readonly [_ in KeyPath]: never };

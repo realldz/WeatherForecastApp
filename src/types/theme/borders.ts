@@ -9,8 +9,8 @@ type BorderColorKeys = keyof UnionConfiguration['borders']['colors'];
 export type BorderColors = {
 	[key in BorderColorKeys]: RemoveBeforeSeparator<key> extends keyof UnionConfiguration['borders']['colors']
 		? {
-				borderColor: UnionConfiguration['borders']['colors'][RemoveBeforeSeparator<key>];
-		  }
+			borderColor: UnionConfiguration['borders']['colors'][RemoveBeforeSeparator<key>];
+		}
 		: never;
 };
 

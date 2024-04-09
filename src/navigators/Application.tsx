@@ -1,7 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { Example, Startup, Home } from '@/screens';
+import { Example, Home, Startup } from '@/screens';
 import { useTheme } from '@/theme';
 
 import type { ApplicationStackParamList } from '@/types/navigation';
