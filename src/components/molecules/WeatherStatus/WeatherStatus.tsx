@@ -6,16 +6,16 @@ type Props = {
 	date: string;
 	icon: ReactNode;
 	temperature: string;
-	windforce: string;
+	wind: string;
 };
 
 const DailyWeather = (props: Props) => {
 	return (
 		<View style={styles.mainBorder}>
-			<Text style={styles.textDay}>{props.date}</Text>
+			<Text style={[styles.textBase, styles.textDay]}>{props.date}</Text>
 			{props.icon}
-			<Text style={styles.textTemperature}>{props.temperature}</Text>
-			<Text style={styles.textWind}>{props.windforce}</Text>
+			<Text style={[styles.textBase, styles.textTemperature]}>{props.temperature}</Text>
+			<Text style={[styles.textBase, styles.textWind]}>{props.wind}</Text>
 		</View>
 	);
 };
