@@ -3,7 +3,10 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 	mainBorder: {
 		flex: 1,
-		backgroundColor: 'blue',
+		margin: 16,
+	},
+	textBase: {
+		color: 'white',
 	},
 	textDay: {
 		fontSize: 20,
