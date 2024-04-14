@@ -12,7 +12,7 @@ const Home = () => {
 						date="Wed 16"
 						icon={<></>}
 						temperature="22 "
-						windforce="1-5 km/h"
+						wind="1-5 km/h"
 					/>
 				</View>
 			</ScrollView>
