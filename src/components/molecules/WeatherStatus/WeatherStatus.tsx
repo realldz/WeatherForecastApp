@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { Text, View } from 'react-native';
 import styles from './style';
 
@@ -9,17 +9,18 @@ type Props = {
 	wind: string;
 };
 
-const DailyWeather = (props: Props) => {
+const WeatherStatus = (props: Props): React.JSX.Element => {
+	const { date, icon, temperature, wind } = props;
 	return (
 		<View style={styles.mainBorder}>
-			<Text style={[styles.textBase, styles.textDay]}>{props.date}</Text>
-			{props.icon}
+			<Text style={[styles.textBase, styles.textDay]}>{date}</Text>
+			{icon}
 			<Text style={[styles.textBase, styles.textTemperature]}>
-				{props.temperature}
+				{temperature}
 			</Text>
-			<Text style={[styles.textBase, styles.textWind]}>{props.wind}</Text>
+			<Text style={[styles.textBase, styles.textWind]}>{wind}</Text>
 		</View>
 	);
 };
 
-export default DailyWeather;
+export default WeatherStatus;
