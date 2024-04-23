@@ -2,8 +2,8 @@ import { config } from '@/theme/_config';
 
 import type {
 	BorderColors,
-	BorderWidths,
 	BorderRadius,
+	BorderWidths,
 } from '@/types/theme/borders';
 import type { UnionConfiguration } from '@/types/theme/config';
 import type { ViewStyle } from 'react-native';
