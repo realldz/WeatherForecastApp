@@ -1,8 +1,22 @@
-import { createContext, PropsWithChildren, useEffect, useMemo, useState } from 'react';
+import {
+	createContext,
+	PropsWithChildren,
+	useEffect,
+	useMemo,
+	useState,
+} from 'react';
 
 import { config } from '@/theme/_config';
-import { generateFontColors, generateFontSizes, staticFontStyles } from '@/theme/fonts';
-import { generateBorderColors, generateBorderRadius, generateBorderWidths } from '@/theme/borders';
+import {
+	generateFontColors,
+	generateFontSizes,
+	staticFontStyles,
+} from '@/theme/fonts';
+import {
+	generateBorderColors,
+	generateBorderRadius,
+	generateBorderWidths,
+} from '@/theme/borders';
 import layout from '@/theme/layout';
 import componentsGenerator from '@/theme/components';
 import { generateBackgrounds } from '@/theme/backgrounds';
@@ -11,7 +25,10 @@ import generateConfig from '@/theme/ThemeProvider/generateConfig';
 
 import type { MMKV } from 'react-native-mmkv';
 import type { ComponentTheme, Theme } from '@/types/theme/theme';
-import type { FulfilledThemeConfiguration, Variant } from '@/types/theme/config';
+import type {
+	FulfilledThemeConfiguration,
+	Variant,
+} from '@/types/theme/config';
 
 // Types
 

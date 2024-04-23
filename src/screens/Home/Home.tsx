@@ -24,19 +24,23 @@ const mockData = [
 	},
 ];
 const Home = () => {
-	return <SafeScreen>
-		<ScrollView style={styles.mainBorder}>
-			<View style={styles.dailyView}>
-				{mockData.map((item, index) => <DailyWeather
-					key={index}
-					date={item.date}
-					icon={item.icon}
-					temperature={item.temperature}
-					wind={item.wind}
-				/>)}
-			</View>
-		</ScrollView>
-	</SafeScreen>;
+	return (
+		<SafeScreen>
+			<ScrollView style={styles.mainBorder}>
+				<View style={styles.dailyView}>
+					{mockData.map((item, index) => (
+						<DailyWeather
+							key={index}
+							date={item.date}
+							icon={item.icon}
+							temperature={item.temperature}
+							wind={item.wind}
+						/>
+					))}
+				</View>
+			</ScrollView>
+		</SafeScreen>
+	);
 };
 
 export default Home;

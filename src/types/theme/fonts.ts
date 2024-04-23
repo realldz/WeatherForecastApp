@@ -17,8 +17,8 @@ type FontColorsKeys = `${keyof UnionConfiguration['fonts']['colors']}`;
 export type FontColors = {
 	[key in FontColorsKeys]: RemoveBeforeSeparator<key> extends keyof UnionConfiguration['fonts']['colors']
 		? {
-			color: UnionConfiguration['fonts']['colors'][RemoveBeforeSeparator<key>];
-		}
+				color: UnionConfiguration['fonts']['colors'][RemoveBeforeSeparator<key>];
+		  }
 		: never;
 };
 

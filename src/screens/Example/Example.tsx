@@ -1,5 +1,12 @@
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Alert, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import {
+	ActivityIndicator,
+	Alert,
+	ScrollView,
+	Text,
+	TouchableOpacity,
+	View,
+} from 'react-native';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { useQuery } from '@tanstack/react-query';

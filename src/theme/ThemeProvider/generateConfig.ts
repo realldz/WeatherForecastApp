@@ -1,7 +1,10 @@
 import { config } from '@/theme/_config';
 import { hasProperty } from '@/types/guards/theme';
 
-import type { FulfilledThemeConfiguration, Variant } from '@/types/theme/config';
+import type {
+	FulfilledThemeConfiguration,
+	Variant,
+} from '@/types/theme/config';
 
 export default (variant: Variant) => {
 	const { variants, ...defaultConfig } = config;

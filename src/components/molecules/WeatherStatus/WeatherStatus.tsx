@@ -14,7 +14,9 @@ const DailyWeather = (props: Props) => {
 		<View style={styles.mainBorder}>
 			<Text style={[styles.textBase, styles.textDay]}>{props.date}</Text>
 			{props.icon}
-			<Text style={[styles.textBase, styles.textTemperature]}>{props.temperature}</Text>
+			<Text style={[styles.textBase, styles.textTemperature]}>
+				{props.temperature}
+			</Text>
 			<Text style={[styles.textBase, styles.textWind]}>{props.wind}</Text>
 		</View>
 	);
